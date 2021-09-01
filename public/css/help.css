@@ -1,0 +1,59 @@
+.section-help{
+  margin-top: 2rem;
+  width: 90%;
+}
+
+.section-help h3{
+  font-size: 2rem;
+  width: 100%;
+  text-align: center;
+  color: var(--light-grey)
+}
+
+.section-help p{
+  font-size: 1.4rem;
+  text-align: center;
+  color: var(--light-grey)
+
+}
+
+.section-help .info{
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+
+}
+
+.section-help .info .info-api,  .info-tech{
+  width: 20%;
+  text-align: left;
+}
+
+.section-help .info .info-api h4, .info-tech h4{
+    font-size: 1.5rem;
+    color: var(--blue);
+}
+
+
+.section-help .info .info-api ul,  .info-tech ul{
+  list-style: none;
+}
+
+.section-help .info .info-api ul li,  .info-tech ul li{
+  width: 100%;
+  padding: .5rem 0px;
+  color: var(--light-grey)
+}
+
+.section-help .info .info-api ul li a{
+  color: var(--lighter-gray);
+  text-decoration: underline;
+  font-size: 18px;
+  padding: 0px;
+  transition: all .3s ease-in;
+}
+
+.section-help .info .info-api ul li a:hover{
+  color: var(--blue);
+}
