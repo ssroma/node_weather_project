@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
   weather_container.style.display = "none"; 
 
 // Default fetch to main page.
-  fetch('http://localhost:3001/weather?city="Lisboa PT"')
+  fetch('/weather?city="Lisboa PT"')
   .then((response) => {
     response.json().then((data) => {
       weather_container.style.display = "flex"; 
@@ -43,7 +43,7 @@ weatherForm.addEventListener('submit', (evt) => {
     const input = document.querySelector('input');
     const inputValue = input.value;
 
-    fetch(`http://localhost:3001/weather?city=${inputValue}`)
+    fetch(`/weather?city=${inputValue}`)
       .then((response) => {
         response.json().then((data) => {
           if(data.error){

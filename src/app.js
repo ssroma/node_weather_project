@@ -4,6 +4,8 @@ const express = require('express');
 const geoLocation = require('../utils/geoLocation');
 const foreCast = require('../utils/foreCast');
 
+const port = process.env.PORT || 3001;
+
 // To be able to use PERTIALS we instanciate HBS-HandleBars
 const hbs = require('hbs');
 
@@ -90,7 +92,7 @@ app.get("/*", (req, res) => {
     });
 })
 
-const port = process.port || 3001;
+
 app.listen(port, () => {
     console.log(`Server rinning on port : ${port}`);
 })
