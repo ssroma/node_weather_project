@@ -1,0 +1,36 @@
+main.notFound-main{
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+}
+
+main.notFound-main .notFound-section{
+  width: 100%;
+  height: calc(100vh - var(--header-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main.notFound-main .notFound-section .notFound-section-h1{
+  align-self: center;
+  padding: 0;
+  font-size: 10rem;
+  color: var(--light-grey);
+}
+
+main.notFound-main .notFound-section p{
+  font-size: 2rem;
+  color: var(--lighter-gray);
+
+}
+
+main.notFound-main .notFound-section a{
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 2em;
+  color: var(--blue);
+}
+
+main.notFound-main .notFound-section a:hover{
+  color: var(--lighter-gray);
+}

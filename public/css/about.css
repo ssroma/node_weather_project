@@ -1,0 +1,23 @@
+
+main .about-section{
+    max-width: 600px;
+    padding: 1rem;
+    
+}
+
+
+main .about-section .card-image{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .about-section .card-image .image {
+    margin: 20px 0px;
+}
+
+main .about-section .card-image .image img{
+    width: 14rem;
+}

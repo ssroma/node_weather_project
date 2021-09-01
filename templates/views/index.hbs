@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Weather</title>
+</head>
+<body>
+    <div id="wrapper">
+        {{!-- Header been rendered By HBS - HandleBars  --}}
+        {{>header}}
+        <main>
+            <h1>{{title}}</h1>
+            <section class="section-search">
+                <form class="section-search-form">
+                    <div class="form-control">
+                        <div class="control-input">
+                            {{!-- <label for="search">Location</label> --}}
+                            <input class="input-text" type="text" placeholder="City Name ex: Lisboa PT ">
+                        </div>
+                        <button class="search-btn">
+                            Search
+                        </button>
+                    </div>
+                </form>
+            </section>
+            <section class="section-weather">
+                <div class="spinner">
+                    <p>Loading .... </p>
+                </div>
+                <div class="weather-container">
+                    <div class="error">
+                        <p class="weather-error">Error</p>
+                    </div>
+                    <div class="weather-response">
+                        <h3 class="weather-name">City Name</h3>
+                        <img class="weather-img" src="./images/icon.svg" alt="weather-image">
+                        <p class="weather-temp-container"><span class="weather-temp">Temperature</span><span>&#8451;</span></p>
+                        <p class="weather-date">Time</p>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/httpRequest.js"></script>
+</body>
+</html>

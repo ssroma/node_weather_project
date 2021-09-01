@@ -1,0 +1,18 @@
+
+
+
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+
+
+
+node_modules/
+*.swp
+yarn-error.log
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.pnp.*
